@@ -11,5 +11,12 @@ Algoritmo de classificação das descargas parciais registradas em categorias de
 
 Justificativa: 
 O banco de dados conta com datas em formatos irregulares, o que impede uma abordagem completa que incorpore o tratamento das séries temporais sem, antes, diagnosticar a causa da inconsistência nos registros. Há registros como “31 de setembro”, um mês que possui apenas 30 dias, e registros do tipo “jan-2111”. Embora o primeiro caso possa ser resolvido ,corrigindo as datas desde a primeira inconsistência, sem ter conhecimento de quando foi, realmente, o primeiro evento, não é possível assumir que a menor data represente, de fato, aquele dia. 
-	Para contornar esta dificuldade, a média móvel será calculada não em função dos dias, mas em função dos eventos. Isto é, a janela para a média de cada uma das três métricas será de n eventos, em vez de n dias.
+Para contornar esta dificuldade, a média móvel será calculada não em função dos dias, mas em função dos eventos. Isto é, a janela para a média de cada uma das três métricas será de n eventos, em vez de n dias.
+
+A figura abaixo apresenta o número de descargas parciais por evento, separadas por categoria de discarga. De modo geral, parece haver um crescimento no número de descargas por evento. Para algumas categorias, esse aumento é mais acentuado.  
+![Número de Descargas Parciais por Evento](https://github.com/inacio-puntel/mentor_projetos_pesquisa/blob/main/nxevento.png)
+![Número de Desgargas Parciais por Evento - Geral](https://github.com/inacio-puntel/mentor_projetos_pesquisa/blob/main/nxeventogeral.png)
+
+
+
 
