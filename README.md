@@ -7,7 +7,7 @@ Durante descargas parciais, a tensão do campo elétrico excede a constante de r
 Devido a dificuldade de acessos a esses equipamentos de alta tensão, abordagens utilizando algoritmos de inteligência artificial, tem se mostrado promissores. Você como Mentor de Projetos e Pesquisa em Inteligência Artificial, foi acionado para desenvolver um projeto envolvendo descargas parciais em unidades geradoras de energia elétrica.
 
 Solução proposta: 
-Algoritmo de classificação das descargas parciais registradas em categorias de descargas e monitoramento da fase, amplitude e número de descargas por evento, através de médias móveis.
+Algoritmo de classificação das descargas parciais registradas em categorias de descargas e monitoramento do número de descargas parciais e sua amplitude por evento, através de médias móveis.
 
 Justificativa: 
 O banco de dados conta com datas em formatos irregulares, o que impede uma abordagem completa que incorpore o tratamento das séries temporais sem, antes, diagnosticar a causa da inconsistência nos registros. Há registros como “31 de setembro”, um mês que possui apenas 30 dias, e registros do tipo “jan-2111”. Embora o primeiro caso possa ser resolvido ,corrigindo as datas desde a primeira inconsistência, sem ter conhecimento de quando foi, realmente, o primeiro evento, não é possível assumir que a menor data represente, de fato, aquele dia. 
@@ -17,6 +17,5 @@ A figura abaixo apresenta o número de descargas parciais por evento, separadas 
 ![Número de Descargas Parciais por Evento](https://github.com/inacio-puntel/mentor_projetos_pesquisa/blob/main/nxevento.png)
 ![Número de Desgargas Parciais por Evento - Geral](https://github.com/inacio-puntel/mentor_projetos_pesquisa/blob/main/nxeventogeral.png)
 
-
-
-
+A relação entre fase e amplitude, por classe de dp, apresentada na figura abaixo parece dar suporte à possibildiade de classificação dos eventos a partir destas variáveis. Porém, a acurácia de um modelo simples permaneceu entre 60 e 65%. Claramente, o modelo precisa ser revisado, ou classificaçãoes mais simples precisam ser criadas.
+![Relação entre Amplitude e Fase por classe de Descarga Parcial](relacao.png)
